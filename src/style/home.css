@@ -1,0 +1,39 @@
+.home {
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.home-img {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home-row {
+  display: flex;
+  margin: 0 10px; /* زيادة المسافة بين العناصر */
+}
+
+@media screen and (max-width: 768px) {
+  .home-row {
+    flex-direction: column;
+  }
+  .home-img {
+    margin-bottom: -50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home {
+    /* flex-direction: column; */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home {
+    /* flex-direction: column; */
+  }
+}
+
+
